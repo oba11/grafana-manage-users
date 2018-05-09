@@ -1,4 +1,4 @@
-# Grafana Manage Users
+# Grafana Users Manager
 
 
 This is a simple app to automate creating users in grafana from a config file.
@@ -8,11 +8,11 @@ This is a simple app to automate creating users in grafana from a config file.
 ### Docker
 
 ```
-docker run -d -v config.yml:/src/config.yml oba11/grafana-manage-users
+docker run -d -v config.yml:/src/config.yml oba11/grafana-users-manager
 
 OR
 
-docker run -d -v config.yml:/config/config.yml -e CONFIG_PATH=/config/config.yml oba11/grafana-manage-users
+docker run -d -v config.yml:/config/config.yml -e CONFIG_PATH=/config/config.yml oba11/grafana-users-manager
 ```
 
 ## Configuration
