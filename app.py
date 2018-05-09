@@ -132,7 +132,7 @@ def main():
       for user in config['users']:
         get_users(
           session=session,
-          url=config['grafana_root_url'],
+          url=config.get('grafana_root_url','http://localhost:3000'),
           username=user['username'],
           password=user['password'])
     time.sleep(60)

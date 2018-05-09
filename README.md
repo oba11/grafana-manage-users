@@ -19,7 +19,16 @@ docker run -d -v config.yml:/config/config.yml -e CONFIG_PATH=/config/config.yml
 
 Environment variables `GRAFANA_ADMIN_USERNAME` and `GRAFANA_ADMIN_PASSWORD` must be set.
 
-The configuration is in YAML, with an [example here](./example.yml)
+The configuration is in YAML, with an [example here](./example.yml) with `grafana_root_url` default to `http://localhost:3000` if not specified in the configuration file.
+
+```
+grafana_root_url: http://localhost:3000
+users:
+- username: user1
+  password: pass1
+- username: user2
+  password: pass
+```
 
 ## To do
 
